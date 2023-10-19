@@ -1,4 +1,8 @@
 /* Reset some default browser styles */
+root{
+    --bgcolor: #f0f0f0;
+    --fgcolor: #333;
+}
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -10,20 +14,20 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
 }
 
 header {
-    background-color: #333;
-    color: #f0f0f0;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #333;
-    color: #f0f0f0;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
     text-align: center;
     padding: 10px;
 }
@@ -50,15 +54,15 @@ main {
 
 section {
     margin-bottom: 20px;
-    color: #333;
-    background-color: #f0f0f0;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the service boxes */
 .service {
-    background-color: #f0f0f0;
+    color: var(--bgcolor);
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -79,8 +83,8 @@ section {
 
 /* Style for the footer */
 footer {
-    background-color: #333;
-    color: #f0f0f0;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
     padding: 20px 0;
     text-align: center;
 }
@@ -93,8 +97,8 @@ footer {
 
 /* Style for the contact form container */
 .contact-form form {
-    background-color: #f0f0f0;
-    color: #333;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
     padding: 20px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -120,8 +124,8 @@ footer {
 
 /* Style for the submit button */
 .contact-form button {
-    background-color: #333;
-    color: #f0f0f0;
+    color: var(--fgcolor);
+    color: var(--bgcolor);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
